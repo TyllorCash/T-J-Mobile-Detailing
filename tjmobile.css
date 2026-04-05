@@ -1,0 +1,257 @@
+/* Base styles */
+:root {
+    color-scheme: light;
+    color: #0f1f47;
+    background: #ffffff;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: #0f4c81;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem clamp(1rem, 4vw, 3rem);
+    background: #ffffff;
+    border-bottom: 1px solid #d6d8e4;
+}
+
+.logo-placeholder {
+    width: 96px;
+    height: 96px;
+    min-width: 96px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #c8102e 0%, #0f4c81 100%);
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.site-logo {
+    width: 96px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.brand-text {
+    flex: 1;
+    max-width: 900px;
+}
+
+.brand-text .eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: #c8102e;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.05;
+}
+
+.brand-text .tagline {
+    margin: 0.75rem 0 0;
+    max-width: 680px;
+    color: #4b5563;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem clamp(1rem, 4vw, 3rem);
+    background: #0f4c81;
+    border-bottom: 1px solid #0d3a69;
+}
+
+.page-nav a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.page-nav a:hover {
+    color: #ffddde;
+}
+
+main {
+    padding: 2rem clamp(1rem, 4vw, 3rem);
+}
+
+.hero {
+    background: linear-gradient(135deg, #c8102e 0%, #0f4c81 100%);
+    color: #ffffff;
+    border-radius: 28px;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-copy {
+    max-width: 760px;
+}
+
+.hero h2 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.05;
+}
+
+.hero p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.05rem;
+}
+
+.section-intro {
+    max-width: 760px;
+    margin-bottom: 1.75rem;
+}
+
+.services, .about, .contact {
+    margin-bottom: 2rem;
+}
+
+.service-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+}
+
+.service-card.featured {
+    border-color: #c8102e;
+    box-shadow: 0 22px 40px rgba(200, 16, 46, 0.12);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+}
+
+.service-card p {
+    margin: 0 0 1rem;
+    color: #4b5563;
+}
+
+.service-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    color: #344054;
+}
+
+.service-card li {
+    margin-bottom: 0.65rem;
+}
+
+.about .section-intro h2,
+.contact-card h2 {
+    margin-top: 0;
+}
+
+.contact-card {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.05);
+}
+
+.instagram-card {
+    border-color: #0f4c81;
+}
+
+.instagram-handle {
+    margin: 1.25rem 0 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #c8102e;
+}
+
+.instagram-handle a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.instagram-handle a:hover {
+    color: #0f4c81;
+    text-decoration: underline;
+}
+
+.contact-list p {
+    margin: 0.75rem 0;
+    color: #0f1f47;
+}
+
+.placeholder {
+    color: #475569;
+}
+
+.note {
+    margin-top: 1rem;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.site-footer {
+    padding: 1.25rem clamp(1rem, 4vw, 3rem);
+    text-align: center;
+    color: #ffffff;
+    background: #0f4c81;
+    border-top: 1px solid #0d3a69;
+}
+
+@media (max-width: 720px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+}
